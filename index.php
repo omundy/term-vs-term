@@ -175,6 +175,13 @@ if ($q2['score'] == $q1['score']) {
 <li><a href="?q1=the+end+of&q2=the+world+as+we+know+it">the end of vs. the world as we know it</a></li>
 </ul>
 
+
+<h4>Code</h4>
+
+<a href="https://github.com/omundy/term-vs-term">https://github.com/omundy/term-vs-term</a>
+
+<p>By <a href="http://owenmundy.com">Owen Mundy</a></p>
+
 </div>
 
 
