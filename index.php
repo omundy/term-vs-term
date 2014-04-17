@@ -176,11 +176,15 @@ if ($q2['score'] == $q1['score']) {
 </ul>
 
 
-<h4>Code</h4>
 
-<a href="https://github.com/omundy/term-vs-term">https://github.com/omundy/term-vs-term</a>
+<h4>Info</h4>
 
-<p>By <a href="http://owenmundy.com">Owen Mundy</a></p>
+<p>Created by <a href="http://owenmundy.com">Owen Mundy</a> for a Digital Humanities DPLA Hackathon @ Florida State University, April 21, 2014.</p>
+
+<ul>
+<li><a href="http://owenmundy.com/work/term-vs-term/">View the live app </a></li>
+<li><a href="https://github.com/omundy/term-vs-term">Code</a></li>
+</ul>
 
 </div>
 
