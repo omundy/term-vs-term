@@ -1,0 +1,8 @@
+<?php
+
+//	Get your API key
+//	http://dp.la/info/developers/codex/policies/#get-a-key
+
+$key = 'YOUR_API_KEY';
+
+?>
