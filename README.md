@@ -3,13 +3,17 @@ Term vs. Term
 
 Compare the number of search results for two phrases from the Digital Public Library of America.
 
+Created for a Digital Scholars Group DPLA Hackathon @ Florida State University. April 21, 2014.
+
+View the live app: http://owenmundy.com/work/term-vs-term/
+
 
 License
 ============
 
 The MIT License (MIT)
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2014 Owen Mundy owenmundy.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
