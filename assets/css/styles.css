@@ -1,0 +1,32 @@
+
+body { background: #eee; }
+.title h2 a { color: rgb(51, 51, 51); text-decoration:none; }
+
+
+.query { display:inline-block; width:100px; }
+.bar-container { height:300px; width:100px; position: relative; }
+.bar { background:#ccc; width:100px; height:0; position: absolute; bottom: 0; border-radius: 10px; }
+.vs-container { display:inline-block; width:40px; }
+.vs-container .questionmark { font-size:200px; font-weight:bold; color:#eee; }
+.compare-btn { width:100px; }
+
+@media (min-width: 576px) {
+	.query { width:200px; }
+	.bar-container { width:200px; }
+	.bar { width:200px; }
+	.vs-container { width:60px; }
+	.compare-btn { width:200px; }
+}
+@media (min-width: 768px) {
+	.vs-container { width:100px; }
+}
+@media (min-width: 992px) {
+	.vs-container { width:200px; }
+}
+
+
+
+
+.timer { color:#999; }
+.page { background: #fff; }
+.footer { background: #eee; }
