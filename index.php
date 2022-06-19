@@ -214,31 +214,7 @@ if ($q2['score'] == $q1['score']) {
 
 <script src="assets/libs/jquery-3.6.0.min.js"></script>
 <script src="assets/libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	let defaultStr = 'search term';
-	$('input:text').each(function(){
-		if ($(this).val() == '' || $(this).val() == defaultStr){
-			$(this).val(defaultStr).css('color','#aaa');
-		}
-	});
-	$('input:text').focus(function(){
-		if ($(this).val() == defaultStr){
-			$(this).val('').css('color','#555');
-		}
-	});
-	$('input:text').blur(function(){
-		if($(this).val() == ""){
-			$(this).val(defaultStr).css('color','#aaa');
-		}
-	});
-	$('.compare-btn').on('click',function(){
-		let url = `?q1=${$('.q1').val()}&q2=${$('.q2').val()}`;
-		window.location.href = url;
-	});
-});
-</script>
+<script src="assets/js/main.js"></script>
 
 <?php include("../../_site/includes/stats.php"); ?>
 
