@@ -60,13 +60,13 @@ function getCount($query)
 {
 	global $key;
 	// build url and fetch with curl() function
-	$url = "http://api.dp.la/v2/items?q=".str_replace(" ", "+", $query)."&api_key=".$key;
+	$url = "https://api.dp.la/v2/items?q=".str_replace(" ", "+", $query)."&api_key=".$key;
 	$json = curl($url);
-
+	// print_r($json);
 	// decode json
 	$data = json_decode($json, true);
-	if (count($data) > 0 && isset($data['count'])) {
-		//print_r($data);
+
+	if (isset($data) && count($data) > 0 && isset($data['count'])) {
 		return $data['count'];
 	} else {
 		return 0;
@@ -216,7 +216,7 @@ if ($q2['score'] == $q1['score']) {
 <script src="assets/libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-<?php include("../../_site/includes/stats.php"); ?>
+<?php include("../../_site/partials/stats.php"); ?>
 
 </body>
 </html>
