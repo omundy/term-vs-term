@@ -6,7 +6,7 @@
  */
 
 // Cloudflare Worker URL (see worker/ and README)
-const API_URL = 'https://dpla-proxy.YOUR-SUBDOMAIN.workers.dev';
+const API_URL = 'https://dpla-proxy.omundy.workers.dev';
 const MIN_BAR = 2;
 const MAX_BAR = 300;
 
