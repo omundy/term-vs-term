@@ -5,8 +5,15 @@
  * (the DPLA API does not allow direct browser requests via CORS).
  */
 
-// Cloudflare Worker URL (see worker/ and README)
-const API_URL = 'https://dpla-proxy.omundy.workers.dev';
+const IS_LOCAL = ['localhost', '127.0.0.1'].includes(location.hostname);
+
+// The Worker only accepts https origins, so upgrade plain http visits
+if (location.protocol === 'http:' && !IS_LOCAL) {
+	location.replace(location.href.replace(/^http:/, 'https:'));
+}
+
+// Cloudflare Worker URL (see worker/ and README); `wrangler dev` when local
+const API_URL = IS_LOCAL ? 'http://localhost:8787' : 'https://dpla-proxy.omundy.workers.dev';
 const MIN_BAR = 2;
 const MAX_BAR = 300;
 
