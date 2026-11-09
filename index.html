@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Term vs. Term</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<main class="container-fluid page pb-4">
+
+	<header class="row">
+		<div class="col-12 text-center mt-3 title">
+			<h1 class="h2"><a href="./">Term vs. Term</a></h1>
+			<small>Compare search results for phrases from the <a href="https://pro.dp.la/developers/api-codex">Digital Public Library of America API</a>.</small>
+		</div>
+	</header>
+
+	<div class="row">
+		<form id="compare-form" class="col-12 col-md-10 offset-md-1 text-center results mt-5 mb-3" method="get" action="./">
+
+			<div class="query">
+				<div class="bar-container">
+					<div class="bar" id="bar1"></div>
+				</div>
+				<div class="my-2 result" id="result1" hidden>
+					<small><a target="_blank" rel="noopener"></a></small>
+				</div>
+				<input class="form-control" type="text" name="q1" id="q1" placeholder="search term" aria-label="First search term" required>
+			</div>
+
+			<div class="vs-container text-center">
+				<div class="questionmark text-center" id="questionmark">?</div>
+				vs.
+			</div>
+
+			<div class="query">
+				<div class="bar-container">
+					<div class="bar" id="bar2"></div>
+				</div>
+				<div class="my-2 result" id="result2" hidden>
+					<small><a target="_blank" rel="noopener"></a></small>
+				</div>
+				<input class="form-control" type="text" name="q2" id="q2" placeholder="search term" aria-label="Second search term" required>
+			</div>
+
+			<div class="my-2 mt-4">
+				<button type="submit" class="btn btn-primary compare-btn">Compare</button>
+			</div>
+
+			<div class="timer mt-2" id="status" aria-live="polite"><small></small></div>
+
+		</form>
+	</div>
+
+</main>
+
+<footer class="container-fluid footer">
+
+	<div class="row">
+		<div class="col-12 col-md-10 offset-md-1 text-center">
+			<h2 class="h5 mt-5 mb-2">Examples</h2>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=apples&amp;q2=oranges">apples vs. oranges</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=cats&amp;q2=dogs">cats vs. dogs</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=science&amp;q2=religion">science vs. religion</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=heaven&amp;q2=hell">heaven vs. hell</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=red&amp;q2=green">red vs. green</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=the+end+of&amp;q2=the+world+as+we+know+it">the end of vs. the world as we know it</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=coffee&amp;q2=tea">coffee vs. tea</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=cake&amp;q2=death">cake vs. death</a>
+			<a class="btn btn-sm btn-outline-secondary m-1" href="?q1=USSR&amp;q2=Russia">USSR vs Russia</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 col-md-10 offset-md-1 text-center">
+			<h2 class="h5 mt-4 mb-2">Credits</h2>
+			<small>
+				<p>Created by <a href="https://owenmundy.com">Owen Mundy</a> for the Digital Humanities DPLA Hackathon @ Florida State University, 2014.</p>
+				<p><a href="https://owenmundy.com/work/term-vs-term/">App</a> | <a href="https://github.com/omundy/term-vs-term">Github</a></p>
+			</small>
+		</div>
+	</div>
+
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
